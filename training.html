@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOTONO（トトノ）- トレーニング記録</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="phone">
+  <div class="screen">
+
+    <div class="statusbar">
+      <span>9:41</span>
+      <span class="icons">📶 🔋</span>
+    </div>
+
+    <div class="content">
+      <div class="topbar">
+        <span class="back" onclick="location.href='index.html'">‹</span>
+        <h1>トレーニング記録</h1>
+      </div>
+
+      <div class="field">
+        <div class="field-label"><span class="fi">📝</span>内容</div>
+        <div class="text-input">
+          <input type="text" value="サッカー練習" placeholder="例：サッカー練習">
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-label"><span class="fi">⏱️</span>時間</div>
+        <div class="num-input">
+          <span style="font-size:13px;color:var(--text-sub);">練習時間</span>
+          <div><input type="number" value="90" id="duration"><span class="unit">分</span></div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-label"><span class="fi">💪</span>強度（RPE）</div>
+        <div class="rpe-scale">
+          <div class="rpe-numbers" data-group="rpe">
+            <span class="rpe-num">1</span>
+            <span class="rpe-num">2</span>
+            <span class="rpe-num">3</span>
+            <span class="rpe-num">4</span>
+            <span class="rpe-num">5</span>
+            <span class="rpe-num">6</span>
+            <span class="rpe-num">7</span>
+            <span class="rpe-num active">8</span>
+            <span class="rpe-num">9</span>
+            <span class="rpe-num">10</span>
+          </div>
+          <div class="rpe-desc">8：かなりきつい</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-label"><span class="fi">🔋</span>練習後の疲労度</div>
+        <div class="stars" data-group="postFatigue">
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-label"><span class="fi">📄</span>メモ</div>
+        <div class="text-input">
+          <textarea rows="3" placeholder="今日の練習内容や気づいたことをメモ">ゲーム形式中心のメニュー</textarea>
+        </div>
+      </div>
+
+      <button class="save-btn" id="saveBtn">保存する</button>
+    </div>
+
+    <div class="toast" id="toastEl">保存しました</div>
+
+    <div class="bottomnav">
+      <button class="navitem" onclick="location.href='index.html'">
+        <span class="navicon">🏠</span>ホーム
+      </button>
+      <button class="navitem" onclick="alert('グラフ画面は準備中です')">
+        <span class="navicon">📊</span>グラフ
+      </button>
+      <button class="navitem" onclick="alert('カレンダー画面は準備中です')">
+        <span class="navicon">📅</span>カレンダー
+      </button>
+      <button class="navitem active">
+        <span class="navicon">📝</span>記録
+      </button>
+      <button class="navitem" onclick="alert('マイページは準備中です')">
+        <span class="navicon">👤</span>マイページ
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/training.js"></script>
+</body>
+</html>

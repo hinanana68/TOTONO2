@@ -384,3 +384,52 @@ body{
   opacity:1;
   transform:translateX(-50%) translateY(0);
 }
+.text-input{
+  background:var(--card);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow);
+  padding:14px 16px;
+}
+.text-input input, .text-input textarea{
+  width:100%;
+  border:none;
+  background:transparent;
+  font-size:14px;
+  color:var(--text);
+  font-family:inherit;
+  resize:none;
+}
+.text-input input:focus, .text-input textarea:focus{ outline:none; }
+
+.rpe-scale{
+  background:var(--card);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow);
+  padding:16px;
+}
+.rpe-numbers{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:6px;
+}
+.rpe-num{
+  width:26px; height:26px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:12px;
+  font-weight:700;
+  color:var(--text-sub);
+  background:var(--border);
+  cursor:pointer;
+  transition:all .15s;
+}
+.rpe-num.active{
+  background:var(--blue);
+  color:#fff;
+}
+.rpe-desc{
+  text-align:center;
+  font-size:11px;
+  color:var(--text-sub);
+  margin-top:8px;
+}
