@@ -1,0 +1,278 @@
+/* ===================================
+   HOME画面専用CSS
+=================================== */
+
+/* ---------- ヘッダー ---------- */
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-top h1{
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+#today{
+    margin-top:6px;
+    font-size:14px;
+    opacity:.9;
+}
+
+.welcome{
+    margin-top:30px;
+}
+
+.welcome h2{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.welcome p{
+    font-size:15px;
+    opacity:.9;
+}
+
+/* ---------- プロフィール ---------- */
+
+.profile-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    backdrop-filter:blur(8px);
+}
+
+.profile-icon i{
+    color:white;
+    font-size:24px;
+}
+
+/* ---------- コンディションカード ---------- */
+
+.score{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #60a5fa
+    );
+
+    color:white;
+
+    text-align:center;
+}
+
+.score .card-title{
+    color:white;
+}
+
+.score-number{
+
+    color:white !important;
+
+    font-size:72px;
+
+    font-weight:bold;
+
+    margin-top:10px;
+}
+
+.score-label{
+
+    margin-top:10px;
+
+    font-size:16px;
+
+    opacity:.9;
+}
+
+/* ---------- クイック入力 ---------- */
+
+.grid2{
+
+    margin-top:15px;
+
+}
+
+.icon-card{
+
+    padding:25px 10px;
+
+    transition:.3s;
+
+}
+
+.icon-card{
+
+    text-decoration:none;
+
+    color:#333;
+
+}
+
+.icon-card i{
+
+    font-size:34px;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.icon-card p{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+.icon-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.15);
+
+}
+
+/* ---------- AIカード ---------- */
+
+.ai-card{
+
+    background:#eef5ff;
+
+}
+
+.ai-card p{
+
+    font-size:15px;
+
+    line-height:2;
+
+}
+
+/* ---------- 今日の記録 ---------- */
+
+.list li{
+
+    font-size:15px;
+
+}
+
+.list strong{
+
+    color:#2563eb;
+
+    font-size:15px;
+
+}
+
+/* ---------- カード ---------- */
+
+.card{
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ---------- ボタン ---------- */
+
+.btn{
+
+    margin-top:20px;
+
+}
+
+/* ---------- アニメーション ---------- */
+
+.score{
+
+    animation:scoreFade .8s;
+
+}
+
+@keyframes scoreFade{
+
+    from{
+
+        transform:translateY(20px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+.icon-card{
+
+    animation:cardFade .8s;
+
+}
+
+@keyframes cardFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ---------- スマホ ---------- */
+
+@media(max-width:420px){
+
+    .welcome h2{
+
+        font-size:22px;
+
+    }
+
+    .score-number{
+
+        font-size:64px;
+
+    }
+
+    .icon-card{
+
+        padding:22px 8px;
+
+    }
+
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>TOTONO | カレンダー</title>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/calendar.css">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="phone">
+
+
+
+<!-- ===== ヘッダー ===== -->
+
+
+<header>
+
+
+<div class="header-top">
+
+
+<a href="../index.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+
+
+<h1>
+記録カレンダー
+</h1>
+
+
+
+<div style="width:40px;"></div>
+
+
+</div>
+
+
+
+<p id="today"></p>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- ===== メイン ===== -->
+
+
+<main>
+
+
+
+<h2 class="section-title">
+
+コンディション履歴
+
+</h2>
+
+
+
+
+
+
+<!-- カレンダー -->
+
+
+<section class="card">
+
+
+<div class="calendar-header">
+
+
+<button id="prevMonth">
+
+<i class="fa-solid fa-chevron-left"></i>
+
+</button>
+
+
+
+<h3 id="calendarTitle">
+
+2026年7月
+
+</h3>
+
+
+
+<button id="nextMonth">
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="week">
+
+
+<span>日</span>
+<span>月</span>
+<span>火</span>
+<span>水</span>
+<span>木</span>
+<span>金</span>
+<span>土</span>
+
+
+</div>
+
+
+
+
+
+<div id="calendarDays" class="calendar-days">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- 選択日データ -->
+
+
+<section class="card">
+
+
+<div class="card-title">
+
+📅 選択日の記録
+
+</div>
+
+
+
+<div class="record-list">
+
+
+<div>
+
+😴 睡眠
+
+<span id="sleep">
+-
+
+</span>
+
+
+</div>
+
+
+
+<div>
+
+💧 水分
+
+<span id="water">
+-
+
+</span>
+
+
+</div>
+
+
+
+
+<div>
+
+😊 気分
+
+<span id="mood">
+-
+
+</span>
+
+
+</div>
+
+
+
+
+<div>
+
+💪 疲労度
+
+<span id="fatigue">
+-
+
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- 分析へ -->
+
+
+<section class="card">
+
+
+<div class="card-title">
+
+📊 詳細分析
+
+</div>
+
+
+
+<p>
+
+期間を選択して
+コンディションの変化を確認できます。
+
+</p>
+
+
+
+<a href="analysis.html" class="btn-link">
+
+分析を見る
+
+</a>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+<!-- ===== 下部ナビ ===== -->
+
+
+<nav class="bottom-nav">
+
+
+<a href="../index.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>ホーム</span>
+
+</a>
+
+
+
+
+<a href="analysis.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<span>分析</span>
+
+</a>
+
+
+
+
+<a href="graph.html">
+
+<i class="fa-solid fa-chart-column"></i>
+
+<span>グラフ</span>
+
+</a>
+
+
+
+
+<a href="challenge.html">
+
+<i class="fa-solid fa-bullseye"></i>
+
+<span>目標</span>
+
+</a>
+
+
+
+
+<a href="mypage.html">
+
+<i class="fa-solid fa-user"></i>
+
+<span>マイページ</span>
+
+</a>
+
+
+</nav>
+
+
+
+
+
+</div>
+
+
+
+
+<script src="../js/calendar.js"></script>
+
+
+
+</body>
+
+
+</html>

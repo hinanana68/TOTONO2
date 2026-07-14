@@ -1,0 +1,306 @@
+/* ===================================
+   ANALYSIS画面専用CSS
+=================================== */
+
+/* ---------- ヘッダー ---------- */
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-top h1{
+    font-size:22px;
+    color:#fff;
+}
+
+.back-btn{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:rgba(255,255,255,.35);
+}
+
+/* ---------- カード ---------- */
+
+.card{
+    margin-bottom:20px;
+    animation:fadeUp .5s ease;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.card-title{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+/* ---------- 総合スコア ---------- */
+
+.score-box{
+    text-align:center;
+}
+
+.score-circle{
+
+    width:170px;
+    height:170px;
+
+    margin:20px auto;
+
+    border-radius:50%;
+
+    background:conic-gradient(
+        #2563eb 0deg,
+        #2563eb 300deg,
+        #dbeafe 300deg
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.score-circle::before{
+
+    content:"";
+
+    width:135px;
+    height:135px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    position:absolute;
+
+}
+
+.score-circle span{
+
+    position:relative;
+
+    font-size:46px;
+
+    font-weight:bold;
+
+    color:#2563eb;
+
+}
+
+.score-box h2{
+
+    margin-top:15px;
+
+    color:#2563eb;
+
+}
+
+.score-box p{
+
+    color:#777;
+
+    margin-top:8px;
+
+}
+
+/* ---------- 分析カード ---------- */
+
+.analysis-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.analysis-item{
+
+    background:#f8fbff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.analysis-item:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 20px rgba(37,99,235,.12);
+
+}
+
+.analysis-item i{
+
+    font-size:28px;
+
+    color:#2563eb;
+
+    margin-bottom:12px;
+
+}
+
+.analysis-item h3{
+
+    font-size:15px;
+
+    margin-bottom:8px;
+
+}
+
+.analysis-item strong{
+
+    font-size:20px;
+
+    color:#2563eb;
+
+}
+
+/* ---------- グラフ ---------- */
+
+canvas{
+
+    width:100% !important;
+
+    max-height:260px;
+
+}
+
+/* ---------- AIカード ---------- */
+
+.ai-card{
+
+    background:#eef6ff;
+
+    border-left:6px solid #2563eb;
+
+}
+
+.ai-card p{
+
+    line-height:2;
+
+    font-size:15px;
+
+}
+
+/* ---------- リスト ---------- */
+
+.list{
+
+    list-style:none;
+
+}
+
+.list li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.list li:last-child{
+
+    border:none;
+
+}
+
+.list strong{
+
+    color:#2563eb;
+
+}
+
+/* ---------- アニメーション ---------- */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card:nth-child(1){animation-delay:.05s;}
+.card:nth-child(2){animation-delay:.10s;}
+.card:nth-child(3){animation-delay:.15s;}
+.card:nth-child(4){animation-delay:.20s;}
+.card:nth-child(5){animation-delay:.25s;}
+
+/* ---------- スマホ ---------- */
+
+@media(max-width:420px){
+
+    .analysis-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .score-circle{
+
+        width:150px;
+        height:150px;
+
+    }
+
+    .score-circle::before{
+
+        width:120px;
+        height:120px;
+
+    }
+
+    .score-circle span{
+
+        font-size:40px;
+
+    }
+
+}

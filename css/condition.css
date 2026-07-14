@@ -1,0 +1,280 @@
+/* ===================================
+   CONDITION画面専用CSS
+=================================== */
+
+/* ---------- ヘッダー ---------- */
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-top h1{
+    font-size:22px;
+    color:#fff;
+}
+
+.back-btn{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:rgba(255,255,255,.35);
+}
+
+/* ---------- カード ---------- */
+
+.card{
+    margin-bottom:18px;
+}
+
+.card-title{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* ---------- 入力欄 ---------- */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #dbe4f0;
+
+    border-radius:14px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ---------- 気分 ---------- */
+
+.mood-group{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+}
+
+.mood-btn{
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#f3f6fb;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.mood-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.mood-btn.active{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+
+}
+
+/* ---------- 疲労度 ---------- */
+
+.fatigue-group{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.star{
+
+    font-size:36px;
+
+    color:#d1d5db;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.star.active{
+
+    color:#f8c537;
+
+}
+
+.star:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* ---------- メモ ---------- */
+
+textarea{
+
+    min-height:130px;
+
+    resize:none;
+
+}
+
+/* ---------- 保存ボタン ---------- */
+
+.btn{
+
+    margin-top:10px;
+
+    margin-bottom:100px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.2);
+
+}
+
+/* ---------- アニメーション ---------- */
+
+.card{
+
+    animation:fadeUp .5s ease;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.card:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+.card:nth-child(4){
+
+    animation-delay:.3s;
+
+}
+
+.card:nth-child(5){
+
+    animation-delay:.4s;
+
+}
+
+.card:nth-child(6){
+
+    animation-delay:.5s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ---------- スマホ ---------- */
+
+@media (max-width:420px){
+
+    .mood-btn{
+
+        width:52px;
+
+        height:52px;
+
+        font-size:24px;
+
+    }
+
+    .star{
+
+        font-size:32px;
+
+    }
+
+}

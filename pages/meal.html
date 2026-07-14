@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOTONO | 食事管理</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/meal.css">
+</head>
+
+<body>
+
+<div class="phone fade">
+
+    <!-- =======================
+         ヘッダー
+    ======================== -->
+
+    <header>
+
+        <div class="header-top">
+
+            <a href="../index.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <h1>食事管理</h1>
+
+            <div style="width:40px;"></div>
+
+        </div>
+
+        <p id="today"></p>
+
+    </header>
+
+    <!-- =======================
+         メイン
+    ======================== -->
+
+    <main>
+
+        <!-- 朝食 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                🌞 朝食
+            </div>
+
+            <textarea
+                id="breakfast"
+                rows="3"
+                placeholder="例：ご飯、味噌汁、卵焼き"></textarea>
+
+        </section>
+
+        <!-- 昼食 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                🍱 昼食
+            </div>
+
+            <textarea
+                id="lunch"
+                rows="3"
+                placeholder="例：鶏むね肉、サラダ、おにぎり"></textarea>
+
+        </section>
+
+        <!-- 夕食 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                🌙 夕食
+            </div>
+
+            <textarea
+                id="dinner"
+                rows="3"
+                placeholder="例：パスタ、スープ"></textarea>
+
+        </section>
+
+        <!-- 間食 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                🍪 間食
+            </div>
+
+            <textarea
+                id="snack"
+                rows="2"
+                placeholder="例：プロテインバー、バナナ"></textarea>
+
+        </section>
+
+        <!-- 水分 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                💧 水分摂取量（ml）
+            </div>
+
+            <input
+                type="number"
+                id="water"
+                placeholder="例：2000">
+
+        </section>
+
+        <!-- メモ -->
+
+        <section class="card">
+
+            <div class="card-title">
+                📝 食事メモ
+            </div>
+
+            <textarea
+                id="memo"
+                rows="5"
+                placeholder="今日の食事で気づいたことを書こう"></textarea>
+
+        </section>
+
+        <!-- 保存ボタン -->
+
+        <button class="btn" id="saveBtn">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            保存する
+
+        </button>
+
+    </main>
+
+    <!-- =======================
+         下部ナビ
+    ======================== -->
+
+    <nav class="bottom-nav">
+
+        <a href="../index.html">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>ホーム</span>
+
+        </a>
+
+        <a href="analysis.html">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>分析</span>
+
+        </a>
+
+        <a href="graph.html">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>グラフ</span>
+
+        </a>
+
+        <a href="challenge.html">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>目標</span>
+
+        </a>
+
+        <a href="mypage.html">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>マイページ</span>
+
+        </a>
+
+    </nav>
+
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/meal.js"></script>
+
+</body>
+
+</html>

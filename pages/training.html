@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOTONO | トレーニング記録</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/training.css">
+</head>
+
+<body>
+
+<div class="phone fade">
+
+    <!-- ヘッダー -->
+    <header>
+
+        <div class="header-top">
+
+            <a href="../index.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <h1>トレーニング記録</h1>
+
+            <div style="width:40px;"></div>
+
+        </div>
+
+        <p id="today"></p>
+
+    </header>
+
+    <!-- メイン -->
+    <main>
+
+        <!-- トレーニング種目 -->
+        <section class="card">
+
+            <div class="card-title">
+                🏃 トレーニング種目
+            </div>
+
+            <select id="trainingType">
+
+                <option value="">選択してください</option>
+                <option>ランニング</option>
+                <option>筋力トレーニング</option>
+                <option>サッカー</option>
+                <option>ストレッチ</option>
+                <option>その他</option>
+
+            </select>
+
+        </section>
+
+        <!-- 時間 -->
+        <section class="card">
+
+            <div class="card-title">
+                ⏱️ トレーニング時間（分）
+            </div>
+
+            <input
+                type="number"
+                id="trainingTime"
+                placeholder="例：90">
+
+        </section>
+
+        <!-- 強度 -->
+        <section class="card">
+
+            <div class="card-title">
+                🔥 強度
+            </div>
+
+            <div class="intensity-group">
+
+                <button class="intensity-btn" data-value="1">弱い</button>
+                <button class="intensity-btn" data-value="2">普通</button>
+                <button class="intensity-btn active" data-value="3">やや強い</button>
+                <button class="intensity-btn" data-value="4">強い</button>
+                <button class="intensity-btn" data-value="5">かなり強い</button>
+
+            </div>
+
+        </section>
+
+        <!-- 満足度 -->
+        <section class="card">
+
+            <div class="card-title">
+                ⭐ 満足度
+            </div>
+
+            <div class="rating-group">
+
+                <span class="star active">★</span>
+                <span class="star active">★</span>
+                <span class="star active">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+
+            </div>
+
+        </section>
+
+        <!-- 消費カロリー -->
+        <section class="card">
+
+            <div class="card-title">
+                🔥 消費カロリー（kcal）
+            </div>
+
+            <input
+                type="number"
+                id="calorie"
+                placeholder="例：650">
+
+        </section>
+
+        <!-- メモ -->
+        <section class="card">
+
+            <div class="card-title">
+                📝 トレーニングメモ
+            </div>
+
+            <textarea
+                id="memo"
+                rows="5"
+                placeholder="今日の練習内容や反省を書こう"></textarea>
+
+        </section>
+
+        <!-- 保存 -->
+        <button class="btn" id="saveBtn">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            保存する
+
+        </button>
+
+    </main>
+
+    <!-- 下部ナビ -->
+    <nav class="bottom-nav">
+
+        <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>ホーム</span>
+        </a>
+
+        <a href="analysis.html">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>分析</span>
+        </a>
+
+        <a href="graph.html">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>グラフ</span>
+        </a>
+
+        <a href="challenge.html">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>目標</span>
+        </a>
+
+        <a href="mypage.html">
+            <i class="fa-solid fa-user"></i>
+            <span>マイページ</span>
+        </a>
+
+    </nav>
+
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/training.js"></script>
+
+</body>
+
+</html>
