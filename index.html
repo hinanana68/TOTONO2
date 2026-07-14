@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOTONO（トトノ）- ホーム</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="phone">
+  <div class="screen">
+
+    <!-- ステータスバー -->
+    <div class="statusbar">
+      <span>9:41</span>
+      <span class="icons">📶 🔋</span>
+    </div>
+
+    <div class="content">
+
+      <div class="topbar" style="justify-content:flex-start; padding-top:2px;">
+        <h1 style="font-size:20px;">TOTONO</h1>
+      </div>
+
+      <div class="greeting">おはよう！<span>ヒナタ</span>さん</div>
+      <div class="subgreeting">今日のコンディション</div>
+
+      <!-- コンディションスコアカード -->
+      <div class="card">
+        <div class="score-row">
+          <div class="score-ring">
+            <div class="score-ring-inner">
+              <b id="scoreValue">82</b>
+              <small>/ 100</small>
+            </div>
+          </div>
+          <div>
+            <div class="score-label">良好</div>
+            <div style="font-size:12px; color:var(--text-sub); line-height:1.6;">
+              昨日より <b style="color:var(--green);">+4</b> ポイント<br>
+              コンディションは良い状態です
+            </div>
+          </div>
+        </div>
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="icon">🕒</div>
+            <div><div class="val">7.5時間</div><div class="lbl">睡眠時間</div></div>
+          </div>
+          <div class="stat">
+            <div class="icon">⚖️</div>
+            <div><div class="val">67.8kg</div><div class="lbl">体重</div></div>
+          </div>
+          <div class="stat">
+            <div class="icon">❤️</div>
+            <div><div class="val">58bpm</div><div class="lbl">心拍数</div></div>
+          </div>
+          <div class="stat">
+            <div class="icon">⭐</div>
+            <div><div class="val">★★★★☆</div><div class="lbl">睡眠の質</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- クイック入力 -->
+      <div class="quick-title">クイック入力</div>
+      <div class="quick-row">
+        <button class="quick-btn" onclick="alert('コンディション入力は次に作ります')">
+          <div class="qicon">🍽️</div>
+          コンディション
+        </button>
+        <button class="quick-btn" onclick="alert('食事入力は準備中です')">
+          <div class="qicon">🍚</div>
+          食事
+        </button>
+        <button class="quick-btn" onclick="alert('トレーニング記録は次に作ります')">
+          <div class="qicon">🏃</div>
+          トレーニング
+        </button>
+      </div>
+
+      <!-- AIアドバイス -->
+      <div class="advice-card">
+        <div class="card-title"><span class="dot"></span>AIからのアドバイス</div>
+        <div class="advice-text">
+          今日は睡眠時間も十分でコンディションも良好です。予定通りトレーニングに取り組んでも問題ないでしょう。
+        </div>
+        <div class="advice-link">詳しく見る →</div>
+      </div>
+
+    </div>
+
+    <!-- 下部ナビゲーション -->
+    <div class="bottomnav">
+      <button class="navitem active">
+        <span class="navicon">🏠</span>ホーム
+      </button>
+      <button class="navitem" onclick="alert('グラフ画面は準備中です')">
+        <span class="navicon">📊</span>グラフ
+      </button>
+      <button class="navitem" onclick="alert('カレンダー画面は準備中です')">
+        <span class="navicon">📅</span>カレンダー
+      </button>
+      <button class="navitem" onclick="alert('記録画面は準備中です')">
+        <span class="navicon">📝</span>記録
+      </button>
+      <button class="navitem" onclick="alert('マイページは準備中です')">
+        <span class="navicon">👤</span>マイページ
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
