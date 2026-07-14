@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOTONO | コンディション入力</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/condition.css">
+</head>
+
+<body>
+
+<div class="phone fade">
+
+    <!-- ===== ヘッダー ===== -->
+
+    <header>
+
+        <div class="header-top">
+
+            <a href="../index.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <h1>コンディション入力</h1>
+
+            <div style="width:40px;"></div>
+
+        </div>
+
+        <p id="today"></p>
+
+    </header>
+
+    <!-- ===== メイン ===== -->
+
+    <main>
+
+        <!-- 睡眠 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                😴 睡眠時間
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="number"
+                    id="sleep"
+                    name="sleep"
+                    placeholder="例：7.5">
+
+            </div>
+
+        </section>
+
+        <!-- 水分 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                💧 水分摂取量（ml）
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="number"
+                    id="water"
+                    name="water"
+                    placeholder="例：2000">
+
+            </div>
+
+        </section>
+
+        <!-- 気分 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                😊 今日の気分
+            </div>
+
+            <div class="mood-group">
+
+                <button class="mood-btn" data-value="5">😁</button>
+
+                <button class="mood-btn" data-value="4">😊</button>
+
+                <button class="mood-btn active" data-value="3">😐</button>
+
+                <button class="mood-btn" data-value="2">😔</button>
+
+                <button class="mood-btn" data-value="1">😫</button>
+
+            </div>
+
+        </section>
+
+        <!-- 疲労度 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                💪 疲労度
+            </div>
+
+            <div class="fatigue-group">
+
+                <span class="star active">★</span>
+                <span class="star active">★</span>
+                <span class="star active">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+
+            </div>
+
+        </section>
+
+        <!-- 体調 -->
+
+        <section class="card">
+
+            <div class="card-title">
+                ❤️ 今日の体調
+            </div>
+
+            <select id="condition">
+
+                <option>とても良い</option>
+
+                <option selected>良い</option>
+
+                <option>普通</option>
+
+                <option>少し悪い</option>
+
+                <option>悪い</option>
+
+            </select>
+
+        </section>
+
+        <!-- メモ -->
+
+        <section class="card">
+
+            <div class="card-title">
+                📝 メモ
+            </div>
+
+            <textarea
+                id="memo"
+                rows="5"
+                placeholder="今日の体調や気づいたことを書こう"></textarea>
+
+        </section>
+
+        <!-- ボタン -->
+
+        <button class="btn" id="saveBtn">
+
+            保存する
+
+        </button>
+
+    </main>
+
+    <!-- ===== 下部ナビ ===== -->
+
+    <nav class="bottom-nav">
+
+        <a href="../index.html">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>ホーム</span>
+
+        </a>
+
+        <a href="analysis.html">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>分析</span>
+
+        </a>
+
+        <a href="graph.html">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>グラフ</span>
+
+        </a>
+
+        <a href="challenge.html">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>目標</span>
+
+        </a>
+
+        <a href="mypage.html">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>マイページ</span>
+
+        </a>
+
+    </nav>
+
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/condition.js"></script>
+
+</body>
+
+</html>

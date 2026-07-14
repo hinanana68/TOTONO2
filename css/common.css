@@ -1,0 +1,438 @@
+/* ==========================
+   TOTONO2 共通スタイル
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --main-color:#3b82f6;
+
+    --sub-color:#93c5fd;
+
+    --bg-color:#f0f7ff;
+
+    --white:#ffffff;
+
+    --text:#1f2937;
+
+    --gray:#64748b;
+
+    --border:#dbeafe;
+
+    --shadow:
+    0 12px 30px rgba(59,130,246,.12);
+
+    --radius:24px;
+
+}
+
+body{
+
+    font-family:
+    "Yu Gothic",
+    "Hiragino Sans",
+    sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #eff6ff 0%,
+        #f8fafc 100%
+    );
+
+    color:var(--text);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   スマホ画面
+========================== */
+
+.phone{
+
+    width:390px;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        180deg,
+        #eff6ff 0%,
+        #ffffff 35%,
+        #f8fafc 100%
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:35px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
+
+}
+
+/* ==========================
+   ヘッダー
+========================== */
+
+header{
+
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#60a5fa
+);
+
+padding:50px 25px 30px;
+
+border-radius:
+0 0 35px 35px;
+
+}
+
+header h1{
+    font-size:28px;
+    font-weight:bold;
+}
+
+header p{
+    margin-top:8px;
+    opacity:.9;
+}
+
+/* ==========================
+   メイン
+========================== */
+
+main{
+    padding:20px;
+    padding-bottom:110px;
+}
+
+/* ==========================
+   カード
+========================== */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:var(--shadow);
+    margin-bottom:20px;
+}
+
+.card-title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   今日のスコア
+========================== */
+
+.score{
+    text-align:center;
+}
+
+.score-number{
+    font-size:58px;
+    font-weight:bold;
+    color:var(--main-color);
+}
+
+.score-label{
+    color:var(--gray);
+    margin-top:5px;
+}
+
+/* ==========================
+   ボタン
+========================== */
+
+.btn{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:15px;
+    background:var(--main-color);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn-outline{
+    width:100%;
+    height:50px;
+    border:2px solid var(--main-color);
+    background:white;
+    color:var(--main-color);
+    border-radius:15px;
+    cursor:pointer;
+}
+
+/* ==========================
+   入力フォーム
+========================== */
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    border:1px solid var(--border);
+    border-radius:12px;
+    font-size:15px;
+}
+
+textarea{
+    resize:none;
+}
+
+/* ==========================
+   グリッド
+========================== */
+
+.grid2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.grid3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+/* ==========================
+   アイコンカード
+========================== */
+
+.icon-card{
+    background:white;
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.icon-card:hover{
+    transform:translateY(-5px);
+}
+
+.icon-card i{
+    font-size:28px;
+    color:var(--main-color);
+    margin-bottom:10px;
+}
+
+.icon-card p{
+    font-size:14px;
+}
+
+/* ==========================
+   AIカード
+========================== */
+
+.ai-card{
+    background:#eff6ff;
+    border-left:6px solid var(--main-color);
+}
+
+.ai-card p{
+    line-height:1.8;
+}
+
+/* ==========================
+   リスト
+========================== */
+
+.list{
+    list-style:none;
+}
+
+.list li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+/* ==========================
+   下部ナビ
+========================== */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:390px;
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0 -5px 20px rgba(0,0,0,.08);
+}
+
+.bottom-nav a{
+    color:#888;
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:12px;
+    transition:.3s;
+}
+
+.bottom-nav a i{
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.bottom-nav a.active{
+    color:var(--main-color);
+}
+
+/* ==========================
+   タイトル
+========================== */
+
+.section-title{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+/* ==========================
+   バッジ
+========================== */
+
+.badge{
+    display:inline-block;
+    background:#dbeafe;
+    color:#2563eb;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:13px;
+}
+
+/* ==========================
+   円グラフ風
+========================== */
+
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:auto;
+    background:conic-gradient(
+        #2563eb 0deg,
+        #2563eb 280deg,
+        #e5e7eb 280deg
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle-inner{
+    width:120px;
+    height:120px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+/* ==========================
+   アニメーション
+========================== */
+
+.fade{
+    animation:fade .5s;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.scale{
+    animation:scale .4s;
+}
+
+@keyframes scale{
+
+    from{
+        transform:scale(.9);
+    }
+
+    to{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================
+   レスポンシブ
+========================== */
+
+@media(max-width:420px){
+
+.phone{
+    width:100%;
+}
+
+.bottom-nav{
+    width:100%;
+}
+
+}

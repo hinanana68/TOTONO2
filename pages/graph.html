@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>TOTONO | コンディショングラフ</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/common.css">
+
+    <link rel="stylesheet" href="../css/graph.css">
+
+</head>
+
+<body>
+
+<div class="phone fade">
+
+<header>
+
+<div class="header-top">
+
+<a href="../index.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h1>コンディショングラフ</h1>
+
+<div style="width:40px;"></div>
+
+</div>
+
+<p id="today"></p>
+
+</header>
+
+<main>
+
+<section class="card">
+
+<div class="card-title">
+
+📈 今週のコンディション推移
+
+</div>
+
+<canvas id="lineChart"></canvas>
+
+</section>
+
+<section class="card">
+
+<div class="card-title">
+
+🥧 コンディション割合
+
+</div>
+
+<canvas id="pieChart"></canvas>
+
+</section>
+
+<section class="card">
+
+<div class="card-title">
+
+🕸 バランス分析
+
+</div>
+
+<canvas id="radarChart"></canvas>
+
+</section>
+
+<section class="card best-card">
+
+<div class="card-title">
+
+🏆 ベストコンディション
+
+</div>
+
+<div class="best-score">
+
+<h2 id="bestScore">91</h2>
+
+<p>Excellent</p>
+
+</div>
+
+</section>
+
+</main>
+
+<nav class="bottom-nav">
+
+<a href="../index.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>ホーム</span>
+
+</a>
+
+<a href="analysis.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<span>分析</span>
+
+</a>
+
+<a href="graph.html" class="active">
+
+<i class="fa-solid fa-chart-column"></i>
+
+<span>グラフ</span>
+
+</a>
+
+<a href="challenge.html">
+
+<i class="fa-solid fa-bullseye"></i>
+
+<span>目標</span>
+
+</a>
+
+<a href="mypage.html">
+
+<i class="fa-solid fa-user"></i>
+
+<span>マイページ</span>
+
+</a>
+
+</nav>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="../js/common.js"></script>
+
+<script src="../js/graph.js"></script>
+
+</body>
+
+</html>

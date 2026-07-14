@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOTONO2 | ホーム</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <div class="phone fade">
+
+        <!-- =========================
+             ヘッダー
+        ========================== -->
+
+        <header>
+
+            <div class="header-top">
+                <div>
+                    <h1>TOTONO</h1>
+                    <p id="today"></p>
+                </div>
+
+                <div class="profile-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <h2>こんにちは！</h2>
+                <p>今日もコンディションを整えよう💪</p>
+            </div>
+
+        </header>
+
+        <!-- =========================
+             メイン
+        ========================== -->
+
+        <main>
+
+            <!-- コンディション -->
+
+            <section class="card score scale">
+
+                <div class="card-title">
+                    今日のコンディション
+                </div>
+
+                <div class="score-number" id="score">
+                    82
+                </div>
+
+                <div class="score-label">
+                    Good Condition
+                </div>
+
+            </section>
+
+            <!-- クイック入力 -->
+
+            <section class="card">
+
+                <div class="card-title">
+                    クイック入力
+                </div>
+
+                <div class="grid2">
+
+                    <a href="pages/condition.html" class="icon-card">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <p>コンディション</p>
+                    </a>
+
+                    <a href="pages/training.html" class="icon-card">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <p>トレーニング</p>
+                    </a>
+
+                    <a href="pages/meal.html" class="icon-card">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <p>食事管理</p>
+                    </a>
+
+                    <a href="pages/calendar.html" class="icon-card">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>カレンダー</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- AIアドバイス -->
+
+            <section class="card ai-card">
+
+                <div class="card-title">
+                    AIアドバイス
+                </div>
+
+                <p>
+                    昨日より睡眠時間が少なくなっています。<br>
+                    今日はストレッチを多めに取り入れ、
+                    水分補給を意識しましょう！
+                </p>
+
+            </section>
+
+            <!-- 今日の記録 -->
+
+            <section class="card">
+
+                <div class="card-title">
+                    今日の記録
+                </div>
+
+                <ul class="list">
+
+                    <li>
+                        <span>睡眠</span>
+                        <strong>7時間30分</strong>
+                    </li>
+
+                    <li>
+                        <span>食事</span>
+                        <strong>3食入力済み</strong>
+                    </li>
+
+                    <li>
+                        <span>トレーニング</span>
+                        <strong>90分</strong>
+                    </li>
+
+                    <li>
+                        <span>疲労度</span>
+                        <strong>★★☆☆☆</strong>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+        <!-- =========================
+             下部ナビ
+        ========================== -->
+
+        <nav class="bottom-nav">
+
+            <a href="index.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>ホーム</span>
+            </a>
+
+            <a href="pages/analysis.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>分析</span>
+            </a>
+
+            <a href="pages/graph.html">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>グラフ</span>
+            </a>
+
+            <a href="pages/challenge.html">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>目標</span>
+            </a>
+
+            <a href="pages/mypage.html">
+                <i class="fa-solid fa-user"></i>
+                <span>マイページ</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>
